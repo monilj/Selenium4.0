@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import static org.openqa.selenium.support.locators.RelativeLocator.withTagName;
+
 
 public class AutomationWithSelenium4 {
     @Test
@@ -14,6 +16,8 @@ public class AutomationWithSelenium4 {
         driver.get("https://www.google.com/");
         driver.findElement(By.name("q")).click();
         driver.findElement(By.name("q")).sendKeys("Selenium");
+        driver.findElement(withTagName("a").toRightOf(By.linkText("Gmail"))).click();
+        System.out.println("clicked");
 
         driver.quit();
 
