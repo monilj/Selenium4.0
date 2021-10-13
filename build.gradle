@@ -10,12 +10,9 @@ repositories {
 }
 
 dependencies {
-    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
-    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-alpha-7'
-// https://mvnrepository.com/artifact/org.testng/testng
-    testImplementation group: 'org.testng', name: 'testng', version: '6.7'
 
-//    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-rc-3'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-rc-3'
+    testImplementation group: 'org.testng', name: 'testng', version: '6.7'
     implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.0.3'
 
 }
